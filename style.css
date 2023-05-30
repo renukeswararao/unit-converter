@@ -1,0 +1,56 @@
+*{
+    font-family:sans-serif;
+}
+body{
+    background-color:rgb(128, 175, 229);
+}
+.main-heading{
+    font-size:40px;
+}
+.button{
+    height:50px;
+    width:140px;
+    text-align:center;
+    padding:10px;
+    border-radius:10px;
+    border-width:1px;
+    font-size:20px;
+    font-weight:bold;
+}
+.sub-heading{
+    font-size:30px;
+}
+.para-main{
+    font-size:20px;
+    font-weight:400;
+    width:1000px;
+    flex-wrap:wrap;
+}
+/*.para-container{
+    border-style:solid;
+    border-color:black;
+    border-width:2px;
+    width:1500px;
+    padding:30px;
+    height:500px;
+    background-color:rgb(245, 147, 220);
+    border-radius:10px;
+}*/
+.container{
+    display:flex;
+    flex-direction:column;  
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+.sub-select-heading{
+    font-size:20px;
+    font-weight:bold;
+}
+.select{
+    width:300px;
+}
+.select-container{
+    display:flex;
+    padding:10px;
+}

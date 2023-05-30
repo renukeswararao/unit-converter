@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .arrow {
+          font-family: 'Material Icons';
+          font-size: 24px;
+        }
+      </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heading">Temperature Converter</h1>
+        <br/>
+        <br/>
+        <div>
+            <button class="button"  onclick="length()">Length</button>
+            <button class="button"  onclick="temperature()">Temperature</button>
+            <button class="button"  onclick="area()">Area</button>
+            <button class="button"  onclick="weight()">Weight</button>
+            <button class="button"  onclick="time()">Time</button>
+        </div>
+        <br/>
+        <br/>
+        <div>
+            <p class="sub-select-heading">From:</p>
+            <div class="select-container">
+                <select id="tempIn-sub" class="form-control select">
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+                <span class="arrow">chevron_right</span>
+                <input class="form-control"  onclick="temperaturejs()" id="tempIn" type="text" placeholder="">
+            </div>
+        </div>
+        <div>
+            <p class="sub-select-heading">To:</p>
+            <div class="select-container">
+                <select class="form-control select" id="tempRes-sub">
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+                <span class="arrow">chevron_right</span>
+                <input class="form-control"  id="tempRes" type="text" placeholder="">
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
